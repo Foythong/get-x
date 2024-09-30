@@ -41,3 +41,10 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+
+# Ignore the build.gradle file in the android/app directory
+/android/app/build.gradle
+
+# Ignore key.properties
+/android/key.properties
