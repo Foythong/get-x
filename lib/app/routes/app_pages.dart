@@ -11,6 +11,10 @@ import '../modules/login/auth_error/bindings/auth_error_binding.dart';
 import '../modules/login/auth_error/views/auth_error_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
+import '../modules/scanqr/bindings/scanqr_binding.dart';
+import '../modules/scanqr/resultqr/bindings/resultqr_binding.dart';
+import '../modules/scanqr/resultqr/views/resultqr_view.dart';
+import '../modules/scanqr/views/scanqr_view.dart';
 import '../modules/simple/views/simple_view.dart';
 import '../modules/transltion/bindings/transltion_binding.dart';
 import '../modules/transltion/views/transltion_view.dart';
@@ -63,6 +67,18 @@ class AppPages {
       name: _Paths.TRANSLTION,
       page: () => const TransltionView(),
       binding: TransltionBinding(),
+    ),
+    GetPage(
+      name: _Paths.SCANQR,
+      page: () => const ScanqrView(),
+      binding: ScanqrBinding(),
+      children: [
+        GetPage(
+          name: _Paths.RESULTQR,
+          page: () => const ResultqrView(),
+          binding: ResultqrBinding(),
+        ),
+      ],
     ),
   ];
 }

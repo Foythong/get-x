@@ -10,6 +10,8 @@ abstract class Routes {
   static const CLOCK = _Paths.CLOCK;
   static const AUTH_ERROR = _Paths.LOGIN + _Paths.AUTH_ERROR;
   static const TRANSLTION = _Paths.TRANSLTION;
+  static const SCANQR = _Paths.SCANQR;
+  static const RESULTQR = _Paths.SCANQR + _Paths.RESULTQR;
 }
 
 abstract class _Paths {
@@ -21,4 +23,6 @@ abstract class _Paths {
   static const CLOCK = '/clock';
   static const AUTH_ERROR = '/auth-error';
   static const TRANSLTION = '/transltion';
+  static const SCANQR = '/scanqr';
+  static const RESULTQR = '/resultqr';
 }

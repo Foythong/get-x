@@ -31,6 +31,10 @@ class ClockView extends GetView<ClockController> {
                 onPressed: () => Get.toNamed(Routes.TRANSLTION),
                 child: Text('translation'),
               ),
+              ElevatedButton(
+                onPressed: () => Get.toNamed(Routes.SCANQR),
+                child: Text('scanqr'),
+              ),
             ],
           ),
         ),
